@@ -21,7 +21,9 @@ Objetivo: Demostrar el uso y aplicación en una base de datos para mejorar la ge
 Ejercicio:
 
 1. Calcula el número total de productos que hay en la tabla productos. (valor 4.5)
-
+USE empresa;
+SELECT COUNT(producto)
+FROM productos;
 
 2. Muestra el número total de productos que tiene cada uno de los fabricantes. El listado
 también debe incluir los fabricantes que no tienen ningún producto. El resultado
