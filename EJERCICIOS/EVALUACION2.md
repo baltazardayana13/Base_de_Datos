@@ -3,7 +3,8 @@
 Objetivo: Demostrar la correcta identificación de los conceptos del lenguaje SQL
 Ejercicio:
 
-1. Menciona los comandos DMl: (valor .85)
+1. Menciona los comandos DML: (valor .85)
+
 SELECT
 INSERT
 UPDATE
@@ -19,20 +20,24 @@ smallint
 
 3. ¿Qué diferencia existe entre TRUNCATE y DELETE?(valor .85)
 
-El TRUNCATE  no permietr el borrado selectivo por lo que elimina todo el contenido de la tabla, el DELETE si acepta el borrado selescrtivo.
+El TRUNCATE  no permietr el borrado selectivo por lo que elimina todo el contenido de la tabla, el DELETE si acepta el borrado selectivo.
+
 4. ¿Para qué se utiliza el atributo UNIQUE?(valor .85)
 Se utiliza para garantizar que no se inserten valores duplicados.
 
 5. ¿Qué diferencia hay entre los tipos de datos VARCHAR y CHAR? (valor .85)
 
-char es de longitud fija que es especificada por el usuario y varchar es una cadena de caracteres de longitud variable especificada por el usuario
+char es de longitud fija que es especificada por el usuario y varchar es una cadena de caracteres de longitud variable especificada por el usuario.
 
 6. Defina brevemente el significado de las siglas SQL(valor .85)
 
 SQL (Structured Query Language) 
-Es un lenguaje de consulta con estructura
+Es un lenguaje de consulta con estructura.
+
 7. Defina brevemente qué es MySQL WorkBench (valor .85)
+
 Es un editor visual de base de datos.
+
 ## Práctica 5.
 ### Gestores de base de datos
 
@@ -49,6 +54,11 @@ En un mapa conceptual presenta 3 gestores de bases de datos, sus característica
 principales, las ventajas y desventajas. (valor 6)
 
 ![image](https://user-images.githubusercontent.com/91554777/170415427-e2b7321b-a97f-43b0-ac24-6e506c307e6b.png)
+
+SOLUCION
+
+![Gestores de Base de Datos drawio](https://user-images.githubusercontent.com/101912013/173212033-0693276c-369b-4481-b335-e3b23b68c585.png)
+
 
 ## Práctica 6.
 ### Herramienta en línea y ejercicio necesarios para realizar las prácticas
