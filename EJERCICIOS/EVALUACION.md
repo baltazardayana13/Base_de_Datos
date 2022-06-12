@@ -19,10 +19,20 @@ Asegurar la seguridad de los datos
 
 2. Indíque cinco responsabilidades del sistema gestor de bases de datos (valor 1.5)
 
+Instalar, configurar y gestionar bases de datos.
+Dar soporte al equipo de desarrollo, seguridad informática y redes.
+Definir el esquema del diccionario de datos.
+Especificar restricciones de integridad para asegurar los datos.
+Garantizar la alta disponibilidad de la base de datos.
+
 3. En una BD al usuario del sistema se le brindarán recursos para realizar diversas
 operaciones sobre estos archivos, tales como: (valor 1.5)
 
+La gestión de datos, los usuarios pueden almacenar datos de forma estructurada y acceder posteriormente a ellos. Pueden crear y administrar los datos y, en algunos casos, los usuarios pueden construir sus propias bases de datos mediante el uso de software de base de datos.
+
 4. ¿Qué es un Sistema de Información? (valor 1.5)
+
+Es un conjunto de elementos orientados al tratamiento y administración de datos e información, organizados y listos para su posterior uso, generados para cubrir necesidad. Un sistema de información realiza cuatro actividades básicas: entrada, almacenamiento, procesamiento y salida de información.
 
 ## Práctica 2.
 
