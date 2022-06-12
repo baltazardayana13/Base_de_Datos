@@ -29,3 +29,66 @@ precio y categoría.
 un código de categoría único.
 
 ● Una pieza sólo puede pertenecer a una categoría.
+
+
+![image](https://user-images.githubusercontent.com/101912013/173252736-6ae6eb26-e1c4-4bca-8a7f-481fb601685a.png)
+
+
+https://www.db-fiddle.com/f/4n4WSUnXChSj5TdtiiQ6CL/1
+
+
+
+
+CREATE DATABASE proveedores;
+USE proveedores;
+
+--REAMOS LA TABLA piezas
+CREATE TABLE piezas(
+    codigo_pieza INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre_pieza CHAR(100) NOT NULL,
+    color CHAR(100) NOT NULL,
+    precio float NOT NULL
+);
+
+
+--CREAMOS LA TABLA proveedor
+CREATE TABLE proveedor(
+    codigo_proveedor INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre_proveedor CHAR(100) NOT NULL,
+    direccion CHAR(150) NOT NULL,
+    ciudad CHAR(100) NOT NULL,
+    provincia CHAR(100) NOT NULL
+);
+
+
+--CREAMOS LA TABLA INTERMEDIA
+ CREATE TABLE suministra(
+   codigo_pieza2 INT UNSIGNED,
+  FOREIGN KEY (codigo_pieza2) REFERENCES piezas(codigo_pieza),
+   codigo_proveedor2 INT UNSIGNED,
+   FOREIGN KEY (codigo_proveedor2) REFERENCES proveedor(codigo_proveedor)
+ );
+ 
+ 
+ --CREAMOS LA TABLA almacen
+ CREATE TABLE almacen(
+   id_almacen INT UNSIGNED PRIMARY KEY,
+   fecha_almacen DATE NOT NULL,
+   cantidad INT UNSIGNED, 
+   codigo_pieza3 INT UNSIGNED ,
+  FOREIGN KEY (codigo_pieza3) REFERENCES piezas(codigo_pieza)
+ );
+ 
+ --CREAMOS LA TABLA categoria
+ CREATE TABLE categoria(
+   codigo_categoria INT UNSIGNED PRIMARY KEY,
+   nombre_categoria CHAR(100) NOT NULL,
+   codigo_pieza4 INT UNSIGNED ,
+  FOREIGN KEY (codigo_pieza4) REFERENCES piezas(codigo_pieza)
+ );
+ 
+ 
+ 
+ 
+ 
+ 
