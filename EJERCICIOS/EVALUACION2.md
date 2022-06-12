@@ -74,3 +74,51 @@ Modelo entidad/relación
 
 
 Base de datos para MySQL
+
+https://www.db-fiddle.com/f/ursVbfxatbDhYLScJcrRmn/0
+
+
+CREATE DATABASE empresa;
+USE empresa;
+
+
+CREATE TABLE productos(
+	codigo_producto CHAR(100) NOT NULL PRIMARY KEY,
+    producto CHAR(100) NOT NULL,
+    precio_en_dolares float NOT NULL
+);
+
+
+INSERT INTO productos VALUES('DD-23','Disco duro SATA 1TB',86.99);
+ INSERT INTO productos VALUES('MM-34','Memoria RAM DDR4 8GB',120);
+ INSERT INTO productos VALUES('DD-98','Disco SSD 1 TB',150.99);
+ INSERT INTO productos VALUES('MM-98','GeForce GTX 1050Ti',185);
+ INSERT INTO productos VALUES('MM-23','GEForce GTX 1080 Xtreme',755);
+ INSERT INTO productos VALUES('MT-12','Monitor 24 LED Full HD',202);
+ INSERT INTO productos VALUES('MT-08','Monitor 27 LED Full HD',245.99);
+ INSERT INTO productos VALUES('LP-19','Portatil yoga 520',559);
+ INSERT INTO productos VALUES('LP-11','Portatil Ideapd 320',444);
+ INSERT INTO productos VALUES('IM-56','Impresora HP Deskjet 3720',59.99);
+ INSERT INTO productos VALUES('IP-54','Imprfesora HP Laserjet Pro M26nw',180);
+
+--CREANOS LA TABLA fabricantes
+CREATE TABLE fabricantes(
+    fabricante CHAR(100) NOT NULL,
+    id_fabricante CHAR(100) PRIMARY KEY,
+   codigo_producto2 CHAR(100),
+   FOREIGN KEY (codigo_producto2) REFERENCES productos (codigo_producto)
+);
+ INSERT INTO fabricantes VALUES('SEAGATE','fab_1','DD-23');
+INSERT INTO fabricantes VALUES('CRUCIAL','fab_2','MM-34');
+INSERT INTO fabricantes VALUES('SAMMSUNG','fab_3','DD-98');
+INSERT INTO fabricantes VALUES('GYGABYTE','fab_4','MM-98');
+INSERT INTO fabricantes VALUES('CRUCIAL','fab_5','MM-23');
+INSERT INTO fabricantes VALUES('ASUS','fab_6','MT-12');
+INSERT INTO fabricantes VALUES('ASUS','fab_7','MT-08');
+INSERT INTO fabricantes VALUES('LENOVO','fab_8','LP-19');
+INSERT INTO fabricantes VALUES('LENOVO','fab_9','LP-11');
+INSERT INTO fabricantes VALUES('HP','fab_10','IM-56');
+INSERT INTO fabricantes VALUES('HP','fab_11','IP-54');
+
+
+
